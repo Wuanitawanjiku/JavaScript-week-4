@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Welcome to my website</title>
+</head>
+<body>
+<h1>WELCOME!</h1>
+<p>This is my new website. Hope you like it.
+</p>
+<script>
+    //Pick a day of the week from my PC
+
+let date = new Date();
+let dayOfWeek = date.getDay();
+let nameOfDay;
+let quote;
+switch(dayOfWeek){
+    case 0:
+        nameOfDay = "Sunday";
+        quote = "Time to take a small break!";
+        break;
+        case 1:
+            nameOfDay = "Monday";
+            quote = "Monday blues!";
+            break;
+            case 2:
+                nameOfDay = "Tuesday";
+                quote = "Research,design day!";
+                break;
+                case 3:
+                    nameOfDay = "Wednesday";
+                    quote = "End month!";
+                    break;
+                    case 4:
+                        nameOfDay = "Thursday";
+                        quote = "April Fool's Day!";
+                        break;
+                        case 5:
+                            nameOfDay = "Friday";
+                            quote = "Weekend is here!";
+                            break;
+                            case 6:
+                                nameOfDay = "Saturday";
+                                quote = "Finally some alone time!";
+                                break;
+}
+//display day of the week
+let weekdayDiv = document.getElementById('weekday');
+weekdayDiv.innerHTML = `${nameOfDay}`;
+//display quote
+let quoteDiv = document.getElementById(phrase);
+quote.innerHTML = `${quote}`
+
+</script>
+</body>
+</html>
